@@ -17,7 +17,7 @@ We can obtain high-quality video using a single-image colorization method and ou
 ```
 conda env create -f environment.yml
 conda activate automatic-video-colorization
-bash pretrained_models/download_models.sh
+bash download_pretrained.sh
 python test.py 
 ```
 the results are saved in test_result/
