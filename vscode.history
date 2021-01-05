@@ -1,0 +1,36 @@
+pip3 install youtube-dl
+youtube-dl -F https://www.youtube.com/watch?v=1KwAzkRyl0U
+ls
+youtube-dl -F mp4 https://www.youtube.com/watch?v=1KwAzkRyl0U
+youtube-dl -f https://www.youtube.com/watch?v=1KwAzkRyl0U 360
+youtube-dl https://www.youtube.com/watch?v=1KwAzkRyl0U -f mp4
+nvidia-smi -q -d Memory | grep -A4 GPU | grep Free
+nvidia-smi -q -d Memory | grep -A4 GPU
+nvidia-smi -q -d Memory 
+nvidia-smi -q
+nvidia-smi 
+exit
+git add test*
+git status
+git commit -m "important changes"
+git config --global user.email "sayantandas30011998@gmail.com"
+git config --global user.name "forkbabu"
+git commit -m "important changes"
+git remote -v
+git rm remote origin
+git remote rm  origin
+git remote -v
+git remote set-url origin https://github.com/forkbabu/automatic-video-colorization.git
+git remote add origin
+git remote add origin https://github.com/forkbabu/automatic-video-colorization.git
+git remote -v
+git push origin
+git push --set-upstream origin master
+git pull
+cat ~/.bash_history
+vim /etc/bash.bashrc
+nano /etc/bash.bashrc
+sudo apt install vim -y
+vim /etc/bash.bashrc
+source /etc/bash.bashrc
+clear
