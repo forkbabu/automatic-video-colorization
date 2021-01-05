@@ -1,4 +1,4 @@
-
+token : ee254db622d0228cd3810b9894531211223b9bbe
 This is a Tensorflow implementation for the CVPR 2019 paper 'Fully Automatic Video Colorization with Self-Regularization and Diversity'.
 
 
