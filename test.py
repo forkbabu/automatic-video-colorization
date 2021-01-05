@@ -38,7 +38,7 @@ print(ARGS)
 os.makedirs("./test_result/{}".format(ARGS.model), exist_ok=True)
 
 
-os.environ["CUDA_VISIBLE_DEVICES"]=str(np.argmax( [int(x.split()[2]) for x in subprocess.Popen("nvidia-smi -q -d Memory | grep -A4 GPU | grep Free", shell=True, stdout=subprocess.PIPE).stdout.readlines()]))
+
 config=tf.ConfigProto()
 config.gpu_options.allow_growth=True
 sess=tf.Session(config=config)

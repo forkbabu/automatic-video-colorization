@@ -26,11 +26,6 @@ img_path = ARGS.img_path
 model=ARGS.model
 print(ARGS)
 
-if not ARGS.use_gpu:
-    os.environ["CUDA_VISIBLE_DEVICES"]=''  
-else:
-    os.environ["CUDA_VISIBLE_DEVICES"]=str(np.argmax( [int(x.split()[2]) for x in subprocess.Popen("nvidia-smi -q -d Memory | grep -A4 GPU | grep Free", shell=True, stdout=subprocess.PIPE).stdout.readlines()]))
-
 def identity_initializer():
     def _initializer(shape, dtype=tf.float32, partition_info=None):
         array = np.zeros(shape, dtype=float)
